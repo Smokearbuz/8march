@@ -41,7 +41,6 @@ html, body {
     background-color: #fff;
     box-shadow: 0 0 20px rgba(0, 0, 0, .1);
 
-    transform: translate(-50%, -50%) rotateY(0deg);
     animation: card 2s linear 2s forwards;
     text-align: center;
 }
@@ -87,10 +86,14 @@ html, body {
 @media (min-width: 601px) {
     .card {
         transform: translate3d(-40%, -50%, 0) rotateY(30deg);
+        animation: card 2s linear 2s forwards;
     }
 }
 
 @media (max-width: 600px) {
+    .card {
+        transform: translate(-50%, -50%) rotateY(0deg);
+    }
     .title { font-size: 10vw; }
     .text { font-size: 6vw; }
     .author { font-size: 5vw; }
