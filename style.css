@@ -10,7 +10,7 @@ body {
     width: 35px;
     height: 35px;
     position: absolute;
-    background: url('img/1241.png');
+    background: url('img/petal.png');
     background-size: 100% 100%;
 }
 
@@ -84,10 +84,14 @@ html, body {
     }
 }
 
+@media (min-width: 601px) {
+    .card {
+        transform: translate3d(-40%, -50%, 0) rotateY(30deg);
+    }
+}
+
 @media (max-width: 600px) {
     .title { font-size: 10vw; }
     .text { font-size: 6vw; }
     .author { font-size: 5vw; }
 }
-
-
